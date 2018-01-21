@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.theRedCan.justin.dawae.MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-1750535467764713/6314893464"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.gms.ads.AdView>
+    <!--ca-app-pub-3940256099942544/6300978111 test-->
+    <!--ca-app-pub-1750535467764713/6314893464 real-->
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="buttonTapped"
+        android:text="Stop"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stop">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp">
+
+
+            <Button
+                android:id="@+id/doyouknowdawae"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="Do you know &#10; da wae? "
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/sakesakeboomboom"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="sake sake &#10; boom boom"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/wewanttoseetheway"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="We want to &#10; see da wae"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/mybuddah"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="My buddah"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/youhaveebola"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="You have ebola"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/youhaveaids"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="You have aids"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/youdonotknowdawei"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="3"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="You do nat &#10; know da wae"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/thewaymybruhddah"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="3"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="The wae"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/newcommander"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="4"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="New commandah"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/notwoqueen"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="4"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="There can't be &#10; two queens"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/spit"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="5"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="Spit on them"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/nonbelievers"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="5"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="Non believers"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/mybuddahway"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="6"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="My buddah wae"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/iwillremembayou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="6"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="I will remembah &#10; you"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/inthinkyouknowdawae"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="7"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="You think you know &#10; da wae?"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/imposta"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="7"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="imposta!"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/ahhh"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="8"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="ahhhhh"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/goodman"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="8"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="Good man"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/fordaqueen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="9"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="For da queen!"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/noise"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="9"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="Noise"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/ihaveebola"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="3dp"
+                android:layout_row="10"
+                android:layout_rowWeight="1"
+                android:background="@drawable/knukles"
+                android:onClick="buttonTapped"
+                android:text="I have ebola"
+                android:textColor="@android:color/background_light" />
+
+        </GridLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
