@@ -67,14 +67,10 @@ public class MainActivity extends AppCompatActivity {
         MobileAds.initialize(this,"ca-app-pub-1750535467764713~4949840904");
 
         mAdView = findViewById(R.id.adView);
-//        AdRequest adRequest = new AdRequest.Builder().build();
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice("A4D0704C9E48682E1E7A19AE6B98FD7E")
-                .build();
+        AdRequest adRequest = new AdRequest.Builder().build();
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .addTestDevice("A4D0704C9E48682E1E7A19AE6B98FD7E")
+//                .build();
         mAdView.loadAd(adRequest);
-
-//        AdView adView = new AdView(this);
-//        adView.setAdSize(AdSize.BANNER);
-//        adView.setAdUnitId("ca-app-pub-1750535467764713/6314893464");
     }
 }
